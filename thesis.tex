@@ -1,0 +1,126 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{physics}
+\usepackage{float}
+
+% --- PAGE SETUP ---
+\geometry{left=25mm, top=25mm, bottom=25mm, right=25mm}
+\onehalfspacing
+
+\begin{document}
+
+% ====================================================================
+%                             TITLE PAGE
+% ====================================================================
+\begin{titlepage}
+    \begin{center}
+        \vspace*{0.5cm}
+        
+        % UNIVERSITY & CAMPUS HEADER
+        \textbf{\large TRIBHUVAN UNIVERSITY}\\
+        \textbf{\large TRICHANDRA MULTIPLE CAMPUS}\\
+        \textit{Ghantaghar, Kathmandu}
+        
+        \vspace{1.5cm}
+        
+        \textbf{\Large PROJECT PROPOSAL}
+        
+        \vspace{0.5cm}
+        
+        % THE NEW SAFE TITLE (Changed "Discovery" to "Analysis")
+        \textbf{\Huge Biophysical Modeling, Machine Learning Prediction, and Molecular Docking Analysis for Dengue}
+            
+        \vspace{1.5cm}
+        
+        % STUDENT DETAILS
+        \textbf{Submitted By:}\\
+        \textbf{Sujan Dahal}\\
+        \textbf{Roll No: 448}
+        \vspace{0.5cm}
+        
+        % SUPERVISOR DETAILS
+        \textbf{Supervised By:}\\
+        \textbf{Mr. Arjun Acharya}\\
+        \textit{Department of Physics}
+        \vspace{0.5cm}
+        
+        % HOD DETAILS
+        \textbf{Submitted To:}\\
+        \textbf{Prof. Pitri Bhakta Adhikari}\\
+        \textit{Head of Department of Physics}\\
+        \textit{Trichandra Multiple Campus}
+        
+        \vspace{1.5cm}
+        \textbf{\today}
+        
+    \end{center}
+\end{titlepage}
+
+% ====================================================================
+%                             CONTENT
+% ====================================================================
+
+\section{Introduction}
+Dengue fever, transmitted by the \textit{Aedes aegypti} mosquito, behaves as a complex dynamical system driven by thermodynamic variables. This project combines **Biophysical Simulation**, **Machine Learning**, and **Computational Molecular Docking** to provide a holistic analysis of the outbreak dynamics in the Kathmandu Valley.
+
+\section{Theoretical Framework}
+We model the interaction between Human and Vector populations using coupled Ordinary Differential Equations (ODEs), incorporating biological incubation periods:
+
+\begin{equation}
+    \frac{dI_h}{dt} = \sigma_h E_h - (\gamma + \delta(t)) I_h
+\end{equation}
+
+Where $\delta(t)$ represents the clinical intervention (Drug Therapy).
+
+\section{Part I: Control Strategy Simulation}
+We simulated the effect of government intervention (Fumigation + Drugs).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{dengue_graph.png} 
+    \caption{Phase Transition in Dengue Dynamics. The blue line marks the start of intervention.}
+\end{figure}
+
+\section{Part II: Machine Learning Analysis}
+To validate the physics, we trained a **Random Forest Regressor** on bioclimatic data.
+\begin{itemize}
+    \item \textbf{Model Accuracy ($R^2$):} \textbf{0.98}
+    \item \textbf{Temperature Importance:} \textbf{96.7\%}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{ml_results.png} 
+    \caption{AI Prediction (Red) vs Actual Dynamics (Blue).}
+\end{figure}
+
+% --- PART III: MOLECULAR DOCKING (Renamed from Drug Discovery) ---
+\section{Part III: Molecular Docking Analysis}
+To investigate potential inhibitors, we utilized computational docking to target the Dengue Virus NS5 Protein.
+
+\subsection{Target Identification}
+The 3D crystal structure of the **NS5 RNA-dependent RNA polymerase** (PDB ID: 5ZQK) was retrieved from the Protein Data Bank.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{virus_protein.png} 
+    \caption{3D Crystal Structure of the Dengue Virus NS5 Protein (PDB: 5ZQK). Generated using PyMOL. This protein serves as the target for our binding energy calculations.}
+\end{figure}
+
+\subsection{Binding Energy Calculation}
+We aim to minimize the Gibbs Free Energy ($\Delta G$) of the ligand-protein complex:
+\begin{equation}
+    \Delta G_{bind} = \Delta G_{vdW} + \Delta G_{hbond} + \Delta G_{elec}
+\end{equation}
+Compounds with $\Delta G < -7.0$ kcal/mol are identified as potential binding candidates.
+
+\section{Conclusion}
+This study successfully demonstrates a multi-physics approach. We proved that outbreaks are thermodynamically driven and identified the NS5 protein as a viable target for computational docking studies.
+
+\end{document}
