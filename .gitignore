@@ -1,0 +1,7 @@
+*.log
+*.aux
+*.toc
+*.synctex.gz
+*.zip
+__pycache__/
+venv/

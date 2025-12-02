@@ -1,0 +1,6 @@
+Symbol,Name,Physics Analogy,Value (Approx)
+β,Transmission Rate,Collision Probability,Low (0.00005)
+σ,Incubation Rate,Phase Lag (1/τ),"1/5 (Human), 1/10 (Mosq)"
+γ,Recovery Rate,Decay Constant,1/7 days
+δ(t),Drug Effect,Damping Force,0 → 0.1 (Control)
+μ,Death Rate,Loss Term,1/14 days
