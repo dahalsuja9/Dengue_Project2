@@ -1,0 +1,16 @@
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+
+out = docking_results.pdbqt
+
+# Grid Box
+center_x = -15.0
+center_y = 20.0
+center_z = -10.0
+
+size_x = 60
+size_y = 60
+size_z = 60
+
+cpu = 4
+exhaustiveness = 8
