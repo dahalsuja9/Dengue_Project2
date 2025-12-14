@@ -1,3 +1,4 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Simulation of Dengue Dynamics. The blue dashed line marks the start of intervention, causing the infected population to decay exponentially.}}{9}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Machine Learning Prediction (Red) vs Actual Synthetic Data (Blue).}}{10}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces 3D Crystal Structure of the Dengue Virus NS5 Protein (PDB: 5ZQK). Generated using PyMOL. This protein serves as the target for our binding energy calculations.}}{11}{figure.3}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Tri-Chandra Multiple Campus (Ghantaghar), the center of this research.}}{1}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Simulation of Dengue Dynamics. The blue line shows when we start using drugs/spraying. You can see the number of cases drops quickly after that.}}{8}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces AI Prediction (Red) vs Actual Data (Blue). The AI follows the pattern very well.}}{9}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces 3D Structure of the Dengue Virus NS5 Protein (PDB: 5ZQK). I generated this image using PyMOL.}}{10}{figure.4}%
